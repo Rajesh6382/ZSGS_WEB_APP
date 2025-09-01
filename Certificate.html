@@ -5,21 +5,313 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate</title>
     <style>
-        body{
-            margin: 10px;
-            border: 5px soild black;
+        body {
+            border: 8px solid black;
+            margin: 60px;
+            font-family: serif;
         }
+        .header-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .header-logo {
+            width: 185px;
+            height: 185px;
+        }
+        .header-text {
+            text-align: center;
+            flex: 1;
+        }
+        .header-text h1,
+        .header-text h2,
+        .header-text h3 {
+            margin: 6px 0;
+        }
+        table, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  border-bottom: none;
+}
+.stmt-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background: #f7fafc;
+}
+.stmt-table th, .stmt-table td {
+    border-right: 2px solid #2f3d4a;
+    border-bottom: 2px solid #2f3d4a;
+    padding: 6px 12px;
+    text-align: left;
+    background: transparent;
+}
+.stmt-table th {
+    text-align: center;
+    background: #e0ecf7;
+    font-weight: bold;
+    border-top: 2px solid #2f3d4a;
+}
+.stmt-table th:last-child, .stmt-table td:last-child {
+    border-right: none;
+}
+.stmt-table tr:last-child td {
+    border-bottom: 2px solid #2f3d4a;
+}
+.stmt-table tr {
+    background: transparent;
+}
     </style>
 </head>
-<body >
-<header>
-    <div><h1>FRANCIS XAVIER ENGINEERING COLLEGE</h1></div>
-    <div><h2>AN AUTONOMOUS INSITIUTION</h2></div>
-    <div><h1>Approved by AICTE, New Delhi & Affiliated to Anna University, Chennai</h1></div>
-    <div><h1>Recognized under Section 2(f) & 12(B) of the Act,1956</h1></div>
-    <div><h3>VANNARPETTAI, TIRUNELVELI-627 003,TAMILNADU, INDIA</h3></div>
-    <div><h3>B.E.&nbsp;&nbsp;&nbsp;DEGREE EXAMINATIONS</h3></div>
-</header>
+<body>
+    <div class="header-row">
+        <img src="CollegeLogo.png" alt="Black Logo" class="header-logo">
+        <div class="header-text">
+            <h1 style="color: darkblue;">FRANCIS XAVIER ENGINEERING COLLEGE</h1>
+            <h2 style="color: darkblue;">AN AUTONOMOUS INSTITUTION</h2>
+            <h3 style="color: green;">Approved by AICTE, New Delhi & Affiliated to Anna University, Chennai</h3>
+            <h3 style="color: green;">Recognized under Section 2(f) & 12(B) of the Act, 1956</h3>
+            <h3 style="color: darkblue;">VANNARPETTAI, TIRUNELVELI-627 003, TAMILNADU, INDIA</h3>
+            <h3>B.E. &nbsp; DEGREE EXAMINATIONS</h3>
+            <h3 style="color: red;">GRADE SHEET</h3>
+            <h3 style="color: red;">CHOICE BASED CREDIT SYSTEM (CBCS)</h3>
+        </div>
+        <img src="Anna_University_Logo.svg.png" alt="Red Logo" class="header-logo1" style="width: 175px;height: 175px;">
+    </div>
+    <div>
+        <table style="border: 2px solid black; width:100%; padding: 20px;">
+            <tr>
+                <td style="color: blue;">NAME OF THE <br>CANDIDATE</td>
+                <td colspan="6"> RAJESH M                   </td>
+                <td rowspan="4"><img src="SSC_photo.jpeg" alt="photo" style="height: 150px;width: 150px;"></td>
+            </tr>
+            <tr>
+                <td style="color: blue;">REGISTER NO.</td>
+                <td>123456789</td>
+                <td style="color: blue;">REGULATION</td>
+                <td>R2016</td>
+                <td style="color: blue;">DATE OF <br>PUBLICATION</td>
+                <td>19-Feb-2020          </td>
     
+            </tr>
+            <tr>
+                <td style="color: blue;">DATE OF BIRTH</td>
+                <td>07-Mar-2004</td>
+                <td style="color: blue;">GENDER</td>
+                <td>M</td>
+                <td style="color: blue;">MONTH & YEAR OF <br>EXAMINATION</td>
+                <td>Mar-2020</td>
+            </tr>
+            <tr>
+                <td style="color: blue;">PROGRAMME & <br>BRANCH</td>
+                <td colspan="6">B.E. -Computer Science and Engineering</td>
+                
+            </tr>
+        </table>
+    </div>
+    <div>
+       <table class="stmt-table">
+    <tr>
+        <th>SEM <br>NO.</th>
+        <th>COURSE <br>CODE</th>
+        <th>COURSE TITLE</th>
+        <th>CREDITS</th>
+        <th>LETTER <br>GRADE</th>
+        <th>GRADE <br>POINT</th>
+        <th>RESULT</th>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>CS8501</td>
+        <td>Theory of Computation</td>
+        <td>3</td>
+        <td>A</td>
+        <td>8</td>
+        <td>PASS</td>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>CS8601</td>
+        <td>Mobile Computing</td>
+        <td>3</td>
+        <td>A+</td>
+        <td>9</td>
+        <td>PASS</td>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>CS8603</td>
+        <td>Distributed Systems</td>
+        <td>3</td>
+        <td>A+</td>
+        <td>9</td>
+        <td>PASS</td>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>CS8651</td>
+        <td>Internet Programming</td>
+        <td>3</td>
+        <td>O</td>
+        <td>10</td>
+        <td>PASS</td>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>CS8691</td>
+        <td>Artificial Intelligence</td>
+        <td>3</td>
+        <td>O</td>
+        <td>10</td>
+        <td>PASS</td>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>CS8075</td>
+        <td>Data Warehousing and Data Mining</td>
+        <td>3</td>
+        <td>O</td>
+        <td>10</td>
+        <td>PASS</td>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>CS8602</td>
+        <td>Compiler Design</td>
+        <td>4</td>
+        <td>A+</td>
+        <td>9</td>
+        <td>PASS</td>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>CS8661</td>
+        <td>Internet Programming Laboratory</td>
+        <td>2</td>
+        <td>A+</td>
+        <td>9</td>
+        <td>PASS</td>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>CS8662</td>
+        <td>Mobile Application Development Laboratory</td>
+        <td>2</td>
+        <td>A+</td>
+        <td>9</td>
+        <td>PASS</td>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>HS8581</td>
+        <td>Professional Communication</td>
+        <td>1</td>
+        <td>A+</td>
+        <td>9</td>
+        <td>PASS</td>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>CS8611</td>
+        <td>Mini Project</td>
+        <td>1</td>
+        <td>A+</td>
+        <td>9</td>
+        <td>PASS</td>
+    </tr>
+    <tr>
+        <td colspan="7" style="text-align:center;background:transparent;border-bottom:none;height: 400px;">* * End of Statement * *</td>
+    </tr>
+</table>
+    </div>
+   <div>
+    <style>
+        table {
+            border: 2px solid black;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th{
+            border: 1.5px solid black;
+            padding: 6px 12px;
+        }
+
+        td {
+            border: 1.5px solid black;
+            padding: 6px 12px;
+            text-align: center;
+        }
+        th {
+            font-weight: bold;
+        }
+    </style>
+    <table>
+        <tr>
+            <th style="text-align: left;color: blue;">Semester</th>
+            <th>I</th>
+            <th>II</th>
+            <th>III</th>
+            <th>IV</th>
+            <th>V</th>
+            <th>VI</th>
+            <th>VII</th>
+            <th>VIII</th>
+        </tr>
+        <tr>
+            <td style="text-align: left;color: blue;">Credits Registered</td>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>3</td>
+            <td>25</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="text-align: left; color: blue;">Credits Earned</td>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>3</td>
+            <td>25</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="text-align: left;color: blue;">Grade Points Earned</td>
+            <td>7</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>8</td>
+            <td>93</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="text-align: left;color: blue;">Grade Point Average(GPA)</td>
+            <td>7.000</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>8.000</td>
+            <td>9.360</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="text-align: left;color: blue;">Cumulative Credits Earned</td>
+            <td>147</td>
+            <td colspan="3" style="color: blue;">Cumulative Grade Point Average (CGPA)</td>
+            <td>8.15</td>
+            <td colspan="3" style="color: blue;">Medium of Instruction :ENGLISH</td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>
