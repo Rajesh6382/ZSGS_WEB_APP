@@ -313,5 +313,82 @@
         </tr>
     </table>
 </div>
+<style>
+    .certificate-section {
+            width: 100%;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+            background: #f8fbfe; /* light background */
+            box-sizing: border-box;
+        }
+        .cert-header {
+            padding-left: 15px;
+            font-size: 16px;
+            color: #222;
+        }
+        .cert-details {
+            padding-left: 15px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            font-size: 15px;
+            color: #222;
+        }
+        .cert-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .cert-block {
+            flex: 1;
+            text-align: center;
+        }
+        .cert-block img {
+            max-width: 120px;
+            max-height: 120px;
+            display: block;
+            margin: 0 auto 5px auto;
+        }
+        .cert-title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #16317b;
+            letter-spacing: .5px;
+            margin-top: 5px;
+        }
+        .cert-sign {
+            color: #16317b;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .cert-signature {
+            max-width: 140px;
+            max-height: 45px;
+            margin: 0 auto;
+            display: block;
+        }
+</style>
+ <div class="certificate-section">
+        <div class="cert-header">
+            <p style="color: blue;">This document issued without any corrections</p>
+        </div>
+        <div class="cert-details">
+            <p style="color: blue;">Tirunelveli - 627 003<br>
+            Date : 23-Aug-2021</p>
+        </div>
+        <div class="cert-row">
+            <div class="cert-block">
+                <span class="cert-title">SIGNATURE OF THE CANDIDATE</span>
+            </div>
+            <div class="cert-block">
+                <img src="LogoCollege.png" alt="Seal">
+                <span class="cert-title">SEAL</span>
+            </div>
+            <div class="cert-block">
+                <img src="sign.png" alt="Signature" class="cert-signature">
+                <div class="cert-sign">CONTROLLER OF EXAMINATIONS</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
