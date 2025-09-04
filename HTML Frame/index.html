@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header{
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav{
+            background-color: #34495e;
+            padding: 15px;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: right;
+        }
+        nav li{
+            margin: 0 20px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav li:hover{
+            background-color: #2c3e50;
+        }
+        .container{
+            display: flex;
+            min-height: 70vh;
+        }
+        aside:first-of-type{
+            width: 250px;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-right: 2px solid #bdc3c7;
+        }
+        aside:first-of-type select{
+            width:100%;
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            background-color: white;
+        }
+        main{
+            flex: 1;
+            padding: 20px 30px;
+            background-color: white;
+
+        }
+        main h3{
+            text-align: justify;
+            line-height: 1.8;
+            color: #555;
+        }
+        aside:last-of-type{
+            width: 200px;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-left: 2px solid #bdc3c7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        aside:last-of-type img{
+            width: 100%;
+            height: 80%;
+            border: 2px solid #bdc3c7;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+        }
+        footer{
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to Code Academy
+    </header>
+    <nav>
+         <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+         </ul>
+    </nav>
+
+    <div class="container">
+        <aside>
+            <label for="topics">Topics</label>
+            <select name="topic" id="topics">
+                <optgroup label="HTML">
+                    <option value="Intro">Introduction</option>
+                    <option value="tags">Tags</option>
+                    <option value="attributes">Attributes</option>
+                </optgroup>
+                <optgroup label="CSS">
+                    <option value="intro">Introduction</option>
+                    <option value="basic">Basic CSS</option>
+                    <option value="advance">Advance CSS</option>
+                </optgroup>
+                <optgroup label="Java Script">
+                    <option value="intro">Introduction</option>
+                    <option value="basic"> Basic of JavaScript</option>
+                    <option value="advanced">Advance of JavaScript</option>
+                </optgroup>
+            </select>
+        </aside>
+
+        <main>
+            <h3>Intro To Code Academy</h3>
+            <p>Code Academy is an online interactive learning platform that helps beginners and professionals learn programming and technology skills in an easy and engaging way. Unlike traditional learning methods, it focuses on hands-on practice where learners write real code directly in the browser while following guided lessons. With a wide range of courses like Python, Java, JavaScript, HTML/CSS, SQL, and more, Code Academy makes coding accessible to everyone — whether you are a student, a working professional, or simply curious about technology. It also provides structured career paths, real-world projects, and certificates for Pro users, making it a powerful tool for building coding confidence, enhancing problem-solving skills, and preparing for future career opportunities.</p>
+        </main>
+
+        <aside>
+            <img src="CodeAcadamy.png" alt="Placeholder Image">
+        </aside>
+    </div>
+
+    <footer>Thanks For Visiting Code Academy</footer>
+</body>
+</html>
